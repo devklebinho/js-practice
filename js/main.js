@@ -154,3 +154,42 @@ pessoa.idade = 49;
 
 console.log('\nVariável pessoa após as alterações: ', pessoa);
 */
+/*
+function funcao(){
+    return 'Código aqui';
+}
+
+const arrowFn = () => 'Código aqui';
+const arrowFn2 = () => {
+    
+    return 'Código aqui';
+}
+
+//funções também são objetos
+funcao.prop = 'Criando uma propriedade nova';
+
+console.log(funcao());
+console.log(funcao.prop);
+
+//Receber parâmetros
+const logValue = value => console.log(value);
+const logFnResult = fnParam => console.log(fnParam());
+
+logFnResult(funcao);
+*/
+this.name = 'Nome do contexto de criação';
+
+const getNameArrowFn = () => this.name;
+
+function getName(){
+    return this.name;
+}
+
+const user = {
+    name: 'Nome do objeto de execução',
+    getNameArrowFn,
+    getName
+}
+
+console.log(user.getNameArrowFn());
+console.log(user.getName());
