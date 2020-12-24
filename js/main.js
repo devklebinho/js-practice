@@ -75,7 +75,7 @@ frase = setReplace(frase, "Kurama", "Kyuubi");
 console.log(frase);
 */
 function load(){
-    alert("page loaded!")
+    console.log('\nPágina carregada com sucesso!')
 }
 
 function clicou(){
@@ -101,3 +101,56 @@ function voltar(elemento){
 function functionChange(elementox){
     console.log(elementox.value);
 }
+/*
+const myNumber = 65.354312;
+console.log(typeof myNumber);
+//Transformar número para string
+const numberAsString = myNumber.toString();
+console.log('\nNúmero como string: ', numberAsString);
+
+//Retorna número com um número de casas decimais
+const fixedTwoDecimals = myNumber.toFixed(2);
+console.log('\nNúmero com duas casas decimais: ', fixedTwoDecimals);
+
+//Transforma uma string em float (CAST)
+console.log('\nString transformada em float: ', parseFloat('13.256'));
+
+//Transforma uma string em int (CAST)
+console.log('\nString transformada em int: ', parseInt('13.256'));
+*/
+/*
+const user = {
+    name: 'Kleber',
+    lastName: 'Silva'
+};
+
+//Recupera as chaves do objeto
+console.log('Propriedades do objeto user: ', Object.keys(user));
+
+//Recupera os valores das chaves do objeto
+console.log('\nValores das propriedades do objeto user: ', Object.values(user));
+
+//Recupera um array de arrays contendo [nome_prop, valor_prop]
+console.log('\nLista de propriedades e valores: ', Object.entries(user));
+
+//Mergear propriedades de objetos
+Object.assign(user, {fullName: 'Kleber Silva'});
+
+console.log('\nAdiciona a propriedade fullName no objeto user: ', user);
+console.log('\nRetorna um novo objeto mergeando dois ou mais objetos: ', Object.assign({}, user, {age: 26}));
+
+//Previne todas as alterações em um objeto
+const newObj = {foo: 'bar'};
+*/
+//Permite apenas alteração de propriedades existentes em um objeto
+/*
+const pessoa = {nome: 'Armando'};
+console.log(pessoa);
+Object.seal(pessoa);
+
+pessoa.nome = 'Armando Português';
+delete pessoa.nome;
+pessoa.idade = 49;
+
+console.log('\nVariável pessoa após as alterações: ', pessoa);
+*/
