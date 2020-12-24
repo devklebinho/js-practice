@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js"></script>
+    <title>js-practice</title>
+</head>
+<body onload="load()">
+    <h1>Minha Página</h1>
+    <button type="button" onclick="clicou()">Download</button>
+    <p id="thanks" onclick="redirecionar()"></p>
+    <p id="mouseover" onmouseover="mensagem(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>
+
+    <select onchange="functionChange(this)">
+        <option value="0">Selecione uma opção</option>
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+    </select>
+</body>
+</html>
